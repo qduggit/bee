@@ -1,4 +1,11 @@
 {
+    "scripts": {
+  "start": [
+    "php artisan key:generate",
+    "php artisan migrate",
+    "php artisan serve --host=0.0.0.0 --port=${PORT}"
+      ]
+    },
     "$schema": "https://getcomposer.org/schema.json",
     "name": "laravel/laravel",
     "type": "project",
